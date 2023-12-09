@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lakki Reddy" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>T&J</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <form id="customForm">
+
+        <p class="h1">POTVRDENIE ÚČASTI<br><span>Confirmation of Attendance</span></p>
+
+        <div class="form">
+            <label for="email">*Tvoja emailová adresa <span>(Your email address)</span>:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Email">
+            <p>Sem vám pošleme svadobné fotky a budeme s vami komunikovať<br><span>(Here we will send you the wedding pictures and communicate with you)</span></p>
+        </div>
+        <div id="line"></div>
+        <div class="form">
+            <label for="name">*Meno a Priezvisko / Meno Rodiny ak je vás viac <span>(Name and Surname / Family name in case you are more than one)</span>:</label><br>
+            <input type="text" id="name" name="name" required placeholder="Meno (Name)">
+        </div>
+        <div id="line"></div>
+        <div class="form">
+            <label for="adults">*Počet dospelých osôb <span>(Number of adults)</span>:</label><br>
+            <input type="radio" id="adults1" name="adults" value="1" required>
+            <label class="option" for="1">1</label><br>
+            <input type="radio" id="adults2" name="adults" value="2" required>
+            <label class="option" for="2">2</label><br>
+            <input type="radio" id="adults3" name="adults" value="3" required>
+            <label class="option" for="3">3</label><br>
+            <input type="radio" id="adults4" name="adults" value="4" required>
+            <label class="option" for="4">4</label><br>
+            <input type="radio" id="adults5" name="adults" value="5" required>
+            <label class="option" for="5">5</label><br>
+            <input type="radio" id="adults6" name="adults" value="6" required>
+            <label class="option" for="6">6</label><br>
+            <input type="radio" id="adults7" name="adults" value="7" required>
+            <label class="option" for="7">7</label>
+        </div>
+        <div id="line"></div>
+        <div class="form">
+            <label for="children">*Počet detí <span>(Number of children)</span>:</label><br>
+            <input type="radio" id="children0" name="children" value="0" required>
+            <label class="option" for="0">0</label><br>
+            <input type="radio" id="children1" name="children" value="1" required>
+            <label class="option" for="1">1</label><br>
+            <input type="radio" id="children2" name="children" value="2" required>
+            <label class="option" for="2">2</label><br>
+            <input type="radio" id="children3" name="children" value="3" required>
+            <label class="option" for="3">3</label><br>
+            <input type="radio" id="children4" name="children" value="4" required>
+            <label class="option" for="4">4</label><br>
+            <input type="radio" id="children5" name="children" value="5" required>
+            <label class="option" for="5">5</label><br>
+            <input type="radio" id="children6" name="children" value="6" required>
+            <label class="option" for="6">6</label>
+        </div>
+        <div id="line"></div>
+        <div class="form">
+            <label for="request">Požiadavky na jedlo (diety) a iné <span>(Food requirements, allergies)</span>:</label><br>
+            <textarea type="" id="request" name="request" placeholder="Požiadavky (requirements)"></textarea>
+        </div>
+        <div id="line"></div>
+        <div class="form">
+            <label for="travel">*Na oslavu z Marianky do vinice vo Sv. Juri sa nechám odviesť autobusom <span>(I will take a bus from Marianka to the vineyard in Svätý Jur for the wedding party)</span>:</label><br>
+            <input type="radio" id="travelYes" name="travel" value="Áno (Yes)" required>
+            <label class="option" for="travelYes">Áno <span>(Yes)</span></label><br>
+            <input type="radio" id="travelNo" name="travel" value="Nie, prídem po vlastnej osi (No, I will come on my own)" required>
+            <label class="option" for="travelNo">Nie, prídem po vlastnej osi <span>(No, I will come on my own)</span></label><br>
+        </div>
+
+        <div class="form">
+            <label for="travelMore">Ak áno, koľkati? <span>(If yes, how many of you?)</span>:</label><br>
+            <input type="radio" id="travelMore1" name="travelMore" value="1">
+            <label class="option" for="1">1</label><br>
+            <input type="radio" id="travelMore2" name="travelMore" value="2">
+            <label class="option" for="2">2</label><br>
+            <input type="radio" id="travelMore3" name="travelMore" value="3">
+            <label class="option" for="3">3</label><br>
+            <input type="radio" id="travelMore4" name="travelMore" value="4">
+            <label class="option" for="4">4</label><br>
+            <input type="radio" id="travelMore5" name="travelMore" value="5">
+            <label class="option" for="5">5</label><br>
+            <input type="radio" id="travelMore6" name="travelMore" value="6">
+            <label class="option" for="6">6</label><br>
+            <input type="radio" id="travelMore7" name="travelMore" value="7">
+            <label class="option" for="7">7</label><br>
+            <input type="radio" id="travelMore8" name="travelMore" value="8">
+            <label class="option" for="8">8</label>
+        </div>
+        <div id="line"></div>
+        <div class="form">
+            <label for="afterparty">*Rád sa zúčastním aj afterparty v nedeľu <span>(I will also join the afterparty on Sunday)</span>:</label><br>
+            <input type="radio" id="afterpartyYes" name="afterparty" value="Áno (Yes)" required>
+            <label class="option" for="afterpartyYes">Jasné! <span>(Yes, I will join for sure!)</span></label><br>
+            <input type="radio" id="afterpartyNo" name="afterparty" value="Nie (Nope)" required>
+            <label class="option" for="afterpartyNo">Nie <span>(Nope)</span></label><br>
+        </div>
+
+        <div class="form">
+            <label for="afterpartyMore">Ak áno, koľkati? <span>(If yes, how many of you?)</span>:</label><br>
+            <input type="radio" id="afterpartyMore1" name="afterpartyMore" value="1">
+            <label class="option" for="1">1</label><br>
+            <input type="radio" id="afterpartyMore2" name="afterpartyMore" value="2">
+            <label class="option" for="2">2</label><br>
+            <input type="radio" id="afterpartyMore3" name="afterpartyMore" value="3">
+            <label class="option" for="3">3</label><br>
+            <input type="radio" id="afterpartyMore4" name="afterpartyMore" value="4">
+            <label class="option" for="4">4</label><br>
+            <input type="radio" id="afterpartyMore5" name="afterpartyMore" value="5">
+            <label class="option" for="5">5</label><br>
+            <input type="radio" id="afterpartyMore6" name="afterpartyMore" value="6">
+            <label class="option" for="6">6</label><br>
+            <input type="radio" id="afterpartyMore7" name="afterpartyMore" value="7">
+            <label class="option" for="7">7</label><br>
+            <input type="radio" id="afterpartyMore8" name="afterpartyMore" value="8">
+            <label class="option" for="8">8</label>
+        </div>
+
+        <a href="." onclick="history.back()"><button class="cancel">Zrušiť <span>(Cancel)</span></button></a>
+        <button type="submit">Odoslať <span>(Submit)</span></button>
+    </form>
+
+    <div id="successMessage" style="display: none;">
+        <div>
+            <p class="h1">ďakujeme! <span>(Thank you !)</span></p>
+            <p>formulár bol úspešne odoslaný <span>(form has been succesfully sent)</span></p>
+            <a class="back" href=".">späť na úvodnú stránku <span>(back to main page)</span> →</a>
+        </div>
+    </div>
+    <p id="failureMessage" style="display: none;">Chyba (Error)</p>
+
+
+
+    <script>
+        // Function to load the Google Form
+        function loadGoogleForm() {
+            var googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSf3ysKc-8f5FuLVDGihXIR3o2ARWPD7hIhZXMb_eX058Fc96w/viewform"; // Replace with your Google Form URL
+
+            $("#googleFormContainer").html('<iframe src="' + googleFormUrl + '" width="0" height="0" style="display:none"></iframe>');
+        }
+
+        // Intercept form submission event
+        $("#customForm").submit(function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var email = $("#email").val();
+            var name = $("#name").val();
+            var adults = $("#adults1:checked").val() || $("#adults2:checked").val() || $("#adults3:checked").val() || $("#adults4:checked").val() || $("#adults5:checked").val() || $("#adults6:checked").val() || $("#adults7:checked").val();
+            var children = $("#children0:checked").val() || $("#children1:checked").val() || $("#children2:checked").val() || $("#children3:checked").val() || $("#children4:checked").val() || $("#children5:checked").val() || $("#children6:checked").val();
+            var request = $("#request").val();
+            var travel = $("#travelYes:checked").val() || $("#travelNo:checked").val();
+            var travelMore = $("#travelMore1:checked").val() || $("#travelMore2:checked").val() || $("#travelMore3:checked").val() || $("#travelMore4:checked").val() || $("#travelMore5:checked").val() || $("#travelMore6:checked").val() || $("#travelMore7:checked").val() || $("#travelMore8:checked").val() || "";
+            var afterparty = $("#afterpartyYes:checked").val() || $("#afterpartyNo:checked").val();
+            var afterpartyMore = $("#afterpartyMore1:checked").val() || $("#afterpartyMore2:checked").val() || $("#afterpartyMore3:checked").val() || $("#afterpartyMore4:checked").val() || $("#afterpartyMore5:checked").val() || $("#afterpartyMore6:checked").val() || $("#afterpartyMore7:checked").val() || $("#afterpartyMore8:checked").val() || "";
+
+
+            // Submit values to the Google Form
+            var googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSf3ysKc-8f5FuLVDGihXIR3o2ARWPD7hIhZXMb_eX058Fc96w/formResponse"; // Replace with your Google Form URL
+
+            $.ajax({
+                url: googleFormUrl,
+                data: {
+                    "entry.523575475": email,
+                    "entry.2069831632": name,
+                    "entry.1864875020": adults,
+                    "entry.551479264": children,
+                    "entry.2028694012": request,
+                    "entry.336121501": travel,
+                    "entry.1510273408": travelMore,
+                    "entry.922191320": afterparty,
+                    "entry.494349511": afterpartyMore,
+                },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function() {
+                        // Show success message and hide the form
+                        $("#customForm").hide();
+                        $("#successMessage").show();
+                    },
+                    200: function() {
+                        // Error message
+                        $("#failureMessage").show();
+                    }
+                }
+            });
+        });
+
+        // Execute the function when the page loads
+        $(document).ready(function() {
+            loadGoogleForm();
+        });
+    </script>
+</body>
+</html>
